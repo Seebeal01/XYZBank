@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-16T12:26:28 EET" name="Default suite" finished-at="2024-09-16T12:26:45 EET" duration-ms="16956">
+    <groups>
+    </groups>
+    <test started-at="2024-09-16T12:26:28 EET" name="Default test" finished-at="2024-09-16T12:26:45 EET" duration-ms="16956">
+      <class name="Xyz">
+        <test-method is-config="true" signature="mystup()[pri:0, instance:Xyz@1ecee32c]" started-at="2024-09-16T12:26:28 EET" name="mystup" finished-at="2024-09-16T12:26:30 EET" duration-ms="1547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mystup -->
+        <test-method signature="logINCustumer()[pri:1, instance:Xyz@1ecee32c]" started-at="2024-09-16T12:26:30 EET" name="logINCustumer" finished-at="2024-09-16T12:26:35 EET" duration-ms="5123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logINCustumer -->
+        <test-method signature="SelectCustomer()[pri:2, instance:Xyz@1ecee32c]" started-at="2024-09-16T12:26:35 EET" name="SelectCustomer" finished-at="2024-09-16T12:26:40 EET" duration-ms="5179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectCustomer -->
+        <test-method signature="Deposit()[pri:3, instance:Xyz@1ecee32c]" started-at="2024-09-16T12:26:40 EET" name="Deposit" finished-at="2024-09-16T12:26:45 EET" duration-ms="5081" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Deposit -->
+      </class> <!-- Xyz -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
