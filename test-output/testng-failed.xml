@@ -6,8 +6,6 @@
       <class name="Xyz">
         <methods>
           <include name="Deposit"/>
-          <include name="SelectCustomer"/>
-          <include name="logINCustumer"/>
           <include name="mystup"/>
         </methods>
       </class> <!-- Xyz -->

@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-16T12:26:28 EET" name="Default suite" finished-at="2024-09-16T12:26:45 EET" duration-ms="16956">
+  <suite started-at="2024-09-19T23:41:57 EET" name="Default suite" finished-at="2024-09-19T23:42:01 EET" duration-ms="4176">
     <groups>
     </groups>
-    <test started-at="2024-09-16T12:26:28 EET" name="Default test" finished-at="2024-09-16T12:26:45 EET" duration-ms="16956">
+    <test started-at="2024-09-19T23:41:57 EET" name="Default test" finished-at="2024-09-19T23:42:01 EET" duration-ms="4176">
       <class name="Xyz">
-        <test-method is-config="true" signature="mystup()[pri:0, instance:Xyz@1ecee32c]" started-at="2024-09-16T12:26:28 EET" name="mystup" finished-at="2024-09-16T12:26:30 EET" duration-ms="1547" status="PASS">
+        <test-method is-config="true" signature="mystup()[pri:0, instance:Xyz@4535b6d5]" started-at="2024-09-19T23:41:57 EET" name="mystup" finished-at="2024-09-19T23:41:59 EET" duration-ms="1822" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mystup -->
-        <test-method signature="logINCustumer()[pri:1, instance:Xyz@1ecee32c]" started-at="2024-09-16T12:26:30 EET" name="logINCustumer" finished-at="2024-09-16T12:26:35 EET" duration-ms="5123" status="PASS">
+        <test-method signature="logINCustumer()[pri:1, instance:Xyz@4535b6d5]" started-at="2024-09-19T23:41:59 EET" name="logINCustumer" finished-at="2024-09-19T23:42:00 EET" duration-ms="685" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logINCustumer -->
-        <test-method signature="SelectCustomer()[pri:2, instance:Xyz@1ecee32c]" started-at="2024-09-16T12:26:35 EET" name="SelectCustomer" finished-at="2024-09-16T12:26:40 EET" duration-ms="5179" status="PASS">
+        <test-method signature="SelectCustomer()[pri:2, instance:Xyz@4535b6d5]" started-at="2024-09-19T23:42:00 EET" name="SelectCustomer" finished-at="2024-09-19T23:42:00 EET" duration-ms="523" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SelectCustomer -->
-        <test-method signature="Deposit()[pri:3, instance:Xyz@1ecee32c]" started-at="2024-09-16T12:26:40 EET" name="Deposit" finished-at="2024-09-16T12:26:45 EET" duration-ms="5081" status="PASS">
+        <test-method signature="Deposit()[pri:3, instance:Xyz@4535b6d5]" started-at="2024-09-19T23:42:00 EET" name="Deposit" finished-at="2024-09-19T23:42:01 EET" duration-ms="1090" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Deposit -->
