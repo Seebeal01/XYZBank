@@ -5,7 +5,7 @@
     <classes>
       <class name="Xyz">
         <methods>
-          <include name="Withdrawl"/>
+          <include name="addnewcudtomer"/>
           <include name="mystup"/>
         </methods>
       </class> <!-- Xyz -->

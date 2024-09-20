@@ -20,7 +20,7 @@ public class Xyz {
 	public void mystup() {
 		driver.manage().window().maximize();
 		driver.get(Url);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	}
 
 	@Test(priority = 1)
@@ -62,4 +62,16 @@ public class Xyz {
 		int finalBalance = Integer.parseInt(ass.getText());
 		Assert.assertEquals(finalBalance, 0, "Balance should be 0 after withdrawing the deposited amount");
 	}
+	@Test(priority=5)
+	public void addnewcudtomer() throws InterruptedException {
+		Thread.sleep(10000);
+		driver.findElement(By.xpath("//button[normalize-space()='Home']")).click();
+		driver.findElement(By.xpath("//button[normalize-space()='Bank Manager Login']")).click();
+		driver.findElement(By.xpath("//button[normalize-space()='Add Customer']")).click();
+		driver.findElement(By.xpath("//input[@placeholder='First Name']")).sendKeys("seebeal");
+		driver.findElement(By.xpath("//input[@placeholder='Last Name']")).sendKeys("abulila");
+		driver.findElement(By.xpath("//input[@placeholder='Post Code']")).sendKeys("123");
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+	}
+	
 }
