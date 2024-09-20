@@ -5,14 +5,16 @@ import java.util.Random;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class Xyz {
-	WebDriver driver = new EdgeDriver();
+	WebDriver driver = new ChromeDriver();
 	String Url = "https://globalsqa.com/angularJs-protractor/BankingProject/#/login";
 	Random random = new Random();
+	int randomnumber = random.nextInt(99999);
 
 	@BeforeTest
 	public void mystup() {
@@ -41,11 +43,23 @@ public class Xyz {
 	}
 
 	@Test(priority = 3)
-	public void Deposit() {
+	public void DepositAndWithdrawl() throws InterruptedException {
 		driver.findElement(By.xpath("//button[normalize-space()='Deposit']")).click();
-		int randomnumber = random.nextInt(99999);
+
 		driver.findElement(By.xpath("//input[@placeholder='amount']")).sendKeys(String.valueOf(randomnumber));
-        driver.findElement(By.xpath("//button[@type='submit']")).click();
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		driver.findElement(By.xpath("//button[normalize-space()='Withdrawl']")).click();
+		Thread.sleep(10000);
+		WebElement Withdrawl = driver.findElement(By.xpath("//input[@placeholder='amount']"));
+		Withdrawl.sendKeys(String.valueOf(randomnumber));
+		driver.findElement(By.xpath("//button[normalize-space()='Withdraw']")).click();
+
 	}
 
+	@Test(priority = 4)
+	public void Assert() {
+		WebElement ass = driver.findElement(By.xpath("//div[@ng-hide='noAccount']//strong[2]"));
+		int finalBalance = Integer.parseInt(ass.getText());
+		Assert.assertEquals(finalBalance, 0, "Balance should be 0 after withdrawing the deposited amount");
+	}
 }
